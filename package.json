@@ -1,0 +1,24 @@
+{
+  "name": "eref-js",
+  "description": "Eref handling for Livefyre arc4 encoded messages",
+  "author": "Livefyre <support@livefyre.com>",
+  "repository": "https://github.com/Livefyre/eref-js",
+  "contributors": {
+    "name": "Ross Pfahler",
+    "email": "ross@livefyre.com"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "bower": "*",
+    "chai": "1.8.1",
+    "express": "*",
+    "mocha": "1.14.0",
+    "mocha-phantomjs": "3.1.6",
+    "phantomjs": "*"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "start": "node ./bin/server.js",
+    "test": "./bin/test"
+  }
+}
