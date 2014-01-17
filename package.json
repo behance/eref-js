@@ -7,7 +7,7 @@
     "name": "Ross Pfahler",
     "email": "ross@livefyre.com"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "devDependencies": {
     "bower": "*",
     "chai": "1.8.1",
