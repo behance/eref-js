@@ -58,14 +58,6 @@ function decryptEref(rawEref, key) {
     return null;
 }
 
-/**
- * @param {string} decodedEref
- * @return {string}
- */
-function erefToContentId(decodedEref) {
-    return decodedEref.substr(0, decodedEref.indexOf(':'));
-}
-
 var eref = {};
 
 /**
@@ -76,10 +68,7 @@ var eref = {};
 eref.decryptEref = function(rawEref, keys) {
     var decryptedEref;
     for (var i=0, l=keys.length; i<l; i++) {
-        decryptedEref = decryptEref(rawEref, keys[i]);
-        if (decryptedEref) {
-            return erefToContentId(decryptedEref);
-        }
+        return decryptEref(rawEref, keys[i]);
     }
 };
 

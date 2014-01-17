@@ -7,13 +7,13 @@ describe('Eref js', function() {
     it('decrypt single eref', function() {
         var keys = [goodKey, 'abcd'];
         var contentId = eref.decryptEref(goodEref, keys);
-        chai.assert.equal(contentId, 55625958);    
+        chai.assert.equal(contentId, '55625958:0/a4d48b98f3df86b392637ce970bf2b498a79b83e');
     });
 
     it('decrypt eref array', function() {
         var erefs = [goodEref, '/abcde=='];
         var keys = [goodKey, 'abcd'];
         var contentId = eref.decryptErefs(erefs, keys);
-        chai.assert.equal(contentId, 55625958);
+        chai.assert.equal(contentId, '55625958:0/a4d48b98f3df86b392637ce970bf2b498a79b83e');
     });
 });
