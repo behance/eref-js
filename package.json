@@ -14,7 +14,8 @@
     "express": "*",
     "mocha": "1.14.0",
     "mocha-phantomjs": "3.1.6",
-    "phantomjs": "*"
+    "phantomjs": "*",
+    "sinon-chai": "~2.4.0"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
