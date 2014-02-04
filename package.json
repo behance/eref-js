@@ -15,7 +15,6 @@
     "mocha": "1.14.0",
     "mocha-phantomjs": "3.1.6",
     "phantomjs": "*",
-    "sinon": "*",
     "sinon-chai": "~2.4.0"
   },
   "scripts": {
