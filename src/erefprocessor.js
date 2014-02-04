@@ -61,6 +61,14 @@ var buffered = [];
  */
 var drainAfterWait = null;
 
+function map(arr, func) {
+    var mapped = [];
+    for (var i = 0; i < arr.length; i++) {
+        mapped.push(func(arr[i]));
+    };
+    return mapped;
+}
+
 /**
  * Set the keys for decrypting erefs.
  * @param {Array.<string>} The user's secret keys
@@ -101,8 +109,8 @@ ErefProcessor.prototype.drainBuffer = function () {
  * @param {Array.<Array>} decrypted The erefs that have been successfully decrypted.
  */
 ErefProcessor.prototype.handleDecrypted = function (erefs) {
-    var compCache = encrypted.map(function (arr) { return arr.join(); });
-    var compDecrypted = erefs.map(function (arr) { return arr.join(); });
+    var compCache = map(encrypted, function (arr) { return arr.join(); });
+    var compDecrypted = map(erefs, function (arr) { return arr.join(); });
     var idx;
     var currDecrypted;
 
