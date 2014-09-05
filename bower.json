@@ -1,6 +1,6 @@
 {
   "name": "eref-js",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "dependencies": {
 	  "base64": "git@github.com:ross-pfahler/Base64.js.git#~0.3.0",
     "inherits": "git://github.com/Livefyre/inherits.git",
