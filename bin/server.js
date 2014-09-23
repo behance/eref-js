@@ -6,7 +6,6 @@ var PORT = 8090;
 var express = require('express');
 var app = express();
 
-app.use(express.directory(__dirname + '/..'));
 app.use(express.static(__dirname + '/..'));
 
 console.log('starting server at port', PORT);

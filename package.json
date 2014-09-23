@@ -7,14 +7,14 @@
     "name": "Ross Pfahler",
     "email": "ross@livefyre.com"
   },
-  "version": "1.1.0",
+  "version": "1.1.1",
   "devDependencies": {
     "bower": "*",
     "chai": "1.8.1",
-    "express": "*",
-    "mocha": "1.14.0",
+    "express": "4.0.0",
+    "mocha": "1.18.2",
     "mocha-phantomjs": "3.1.6",
-    "phantomjs": "*",
+    "phantomjs": "1.9.2-2",
     "sinon-chai": "~2.4.0"
   },
   "scripts": {
