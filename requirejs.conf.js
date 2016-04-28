@@ -16,7 +16,7 @@ require.config({
     location: 'tests'
   },{
     name: "stream",
-    location: "lib/stream/src"
+    location: "lib/stream"
   }],
   shim: {
     'sinon': {

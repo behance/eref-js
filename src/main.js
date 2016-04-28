@@ -1,4 +1,4 @@
-var Arc4 = require('eref/arc4');
+var Arc4 = require('./arc4');
 var base64 = require('base64');
 
 /**
