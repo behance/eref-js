@@ -4,7 +4,7 @@
  */
 var eref = require('./main');
 var inherits = require('inherits');
-var Transform = require('stream/src/transform');
+var Transform = require('stream/transform');
 
 /**
  * @constructor
