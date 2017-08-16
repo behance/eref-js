@@ -1,5 +1,4 @@
-var Arc4 = require('eref/arc4');
-var base64 = require('base64');
+var Arc4 = require('./arc4');
 
 /**
  * Turns a string into an array of bytes; a "byte" being a JS number in the
@@ -34,7 +33,7 @@ function byteArrayToString(array) {
 function arc4Decrypt(key, data) {
     var arc4 = new Arc4();
     key = stringToByteArray(key);
-    data = base64.atob(data);
+    data = window.atob(data);
 
     data = stringToByteArray(data);
     arc4.setKey(key);
