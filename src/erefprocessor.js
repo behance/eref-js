@@ -2,7 +2,7 @@
  * @fileoverview
  * The eref processor is responsible for hyrdating erefs by fetching ref batches from bootstrap.
  */
-var eref = require('eref');
+var eref = require('eref/main');
 var inherits = require('inherits');
 var Transform = require('stream/transform');
 
