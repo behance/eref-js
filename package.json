@@ -9,7 +9,7 @@
     "email": "ross@livefyre.com"
   },
   "license": "MIT",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "dependencies": {
     "inherits": "Livefyre/inherits.git#ccbfcef",
     "stream": "Livefyre/stream#v0.2.2"
