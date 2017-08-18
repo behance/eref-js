@@ -1,5 +1,6 @@
 {
-  "name": "eref-js",
+  "name": "@behance/eref-js",
+  "main": "src/main",
   "description": "Eref handling for Livefyre arc4 encoded messages",
   "author": "Livefyre <support@livefyre.com>",
   "repository": "https://github.com/Livefyre/eref-js",
