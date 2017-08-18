@@ -30,10 +30,16 @@ function byteArrayToString(array) {
     return String.fromCharCode.apply(null, array);
 }
 
+function isomorphicAtob(str) {
+    return (typeof atob === 'function') ?
+      atob(str) :
+      new Buffer(str, 'base64').toString('binary');
+}
+
 function arc4Decrypt(key, data) {
     var arc4 = new Arc4();
     key = stringToByteArray(key);
-    data = window.atob(data);
+    data = isomorphicAtob(data);
 
     data = stringToByteArray(data);
     arc4.setKey(key);
