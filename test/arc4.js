@@ -1,4 +1,5 @@
-var Arc4 = require('eref/arc4');
+var assert = require('assert');
+var Arc4 = require('../src/arc4');
 
 function arrayClone(object) {
 	var length = object.length;
@@ -26,14 +27,14 @@ describe('Arc4 tests', function() {
 		arc4.setKey(key);
 		arc4.crypt(byteArray);
 
-		chai.assert.deepEqual(byteArray, [0x51, 0xBB, 0xDD, 0x95, 0x9B, 0x42, 0x34]);
+		assert.deepEqual(byteArray, [0x51, 0xBB, 0xDD, 0x95, 0x9B, 0x42, 0x34]);
 
 		// The same key and crypt call should unencrypt the data back to its original
 		// state
 		arc4 = new Arc4();
 		arc4.setKey(key);
 		arc4.crypt(byteArray);
-		chai.assert.deepEqual(byteArray, startArray);
+		assert.deepEqual(byteArray, startArray);
 	});
 
 
@@ -54,6 +55,6 @@ describe('Arc4 tests', function() {
 		var withCrypt = arrayClone(data);
 		arc4.crypt(new Array(256));
 		arc4.crypt(withCrypt);
-		chai.assert.deepEqual(withDiscard, withCrypt);
+		assert.deepEqual(withDiscard, withCrypt);
 	});
 });
