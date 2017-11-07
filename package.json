@@ -1,6 +1,6 @@
 {
   "name": "@behance/eref-js",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "src/main",
   "license": "MIT",
   "description": "Eref handling for Livefyre arc4 encoded messages",
